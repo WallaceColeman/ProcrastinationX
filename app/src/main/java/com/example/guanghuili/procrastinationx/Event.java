@@ -1,10 +1,11 @@
 package com.example.guanghuili.procrastinationx;
 
 public class Event {
+    private int EventId;
     private String name;
     private String type;
     private String date;
-    private int EventId;
+
 
 
     public Event(){
@@ -12,7 +13,7 @@ public class Event {
     }
 
 
-    public Event(String name, String type, String date, int EventId){
+    public Event(int EventId, String name, String type, String date){
         this.name = name;
         this.type = type;
         this.date = date;
