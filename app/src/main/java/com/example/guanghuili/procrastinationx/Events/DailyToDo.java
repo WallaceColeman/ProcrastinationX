@@ -1,4 +1,4 @@
-package com.example.guanghuili.procrastinationx;
+package com.example.guanghuili.procrastinationx.Events;
 
 public class DailyToDo extends Event {
     private String dailyToDoList;

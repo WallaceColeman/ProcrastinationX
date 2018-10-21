@@ -1,4 +1,6 @@
-package com.example.guanghuili.procrastinationx;
+package com.example.guanghuili.procrastinationx.Events;
+
+import com.example.guanghuili.procrastinationx.Events.Event;
 
 public class OneTime extends Event {
     private String oneTimeToDoList;

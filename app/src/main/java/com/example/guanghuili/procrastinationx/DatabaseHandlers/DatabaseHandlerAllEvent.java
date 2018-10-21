@@ -1,12 +1,14 @@
-package com.example.guanghuili.procrastinationx;
+package com.example.guanghuili.procrastinationx.DatabaseHandlers;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.support.annotation.Nullable;
 import android.util.Log;
+
+import com.example.guanghuili.procrastinationx.Constants;
+import com.example.guanghuili.procrastinationx.Events.Event;
 
 import java.text.DateFormat;
 import java.util.ArrayList;
@@ -44,7 +46,7 @@ public class DatabaseHandlerAllEvent extends SQLiteOpenHelper {
         ContentValues values = new ContentValues();
         values.put(Constants.KEY_NAME_ALL_EVENT, event.getName());
         values.put(Constants.KEY_TYPE_ALL_EVENT, event.getType());
-        values.put(Constants.KEY_DATE_ALL_EVENT, event.getDate());
+        values.put(Constants.KEY_DATE_ALL_EVENT, System.currentTimeMillis());
 
         //Insert values to the row
         db.insert(Constants.TABLE_NAME_EVENT, null, values);
@@ -94,7 +96,7 @@ public class DatabaseHandlerAllEvent extends SQLiteOpenHelper {
                         new String[]{Constants.KEY_ID_ALL_EVENT, Constants.KEY_NAME_ALL_EVENT, Constants.KEY_TYPE_ALL_EVENT, Constants.KEY_DATE_ALL_EVENT},//entries of the table
                 null,
              null,
-                null,null,null,null);
+                null,null,Constants.KEY_DATE_ALL_EVENT + " DESC");
 
         if (cursor.moveToFirst()){//1. checks if the query is empty 2. if it's not empty, move to the beginning
             do{

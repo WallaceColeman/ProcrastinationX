@@ -1,4 +1,4 @@
-package com.example.guanghuili.procrastinationx;
+package com.example.guanghuili.procrastinationx.Events;
 
 public class Event {
     private int EventId;
