@@ -1,33 +1,36 @@
 package com.example.guanghuili.procrastinationx;
 
 public class OneTime extends Event {
-    private String toDoList;
-    private int toDoListId;
+    private String oneTimeToDoList;
+    private int oneTimeToDoListId;
     private String dueDate;
     private String dueTime;
 
-    public OneTime(String name, String type, String date, int EventId, String toDoList, int toDoListId, String dueDate, String dueTime) {
-        super(name, type, date, EventId);
-        this.toDoList = toDoList;
-        this.toDoListId = toDoListId;
+    public OneTime(){
+
+    }
+    public OneTime(int oneTimeToDoListId, String name, String oneTimeToDoList, String type, String date, String dueDate, String dueTime, int EventId) {
+        super(EventId, name, type, date);
+        this.oneTimeToDoList = oneTimeToDoList;
+        this.oneTimeToDoListId = oneTimeToDoListId;
         this.dueDate = dueDate;
         this.dueTime = dueTime;
     }
 
-    public String getToDoList() {
-        return toDoList;
+    public String getOneTimeToDoList() {
+        return oneTimeToDoList;
     }
 
-    public void setToDoList(String toDoList) {
-        this.toDoList = toDoList;
+    public void setOneTimeToDoList(String oneTimeToDoList) {
+        this.oneTimeToDoList = oneTimeToDoList;
     }
 
-    public int getToDoListId() {
-        return toDoListId;
+    public int getOneTimeToDoListId() {
+        return oneTimeToDoListId;
     }
 
-    public void setToDoListId(int toDoListId) {
-        this.toDoListId = toDoListId;
+    public void setOneTimeToDoListId (int OneTimeToDoListId) {
+        this.oneTimeToDoListId = OneTimeToDoListId;
     }
 
     public String getDueDate() {

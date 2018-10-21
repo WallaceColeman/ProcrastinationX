@@ -15,10 +15,10 @@ public class Constants {
     public static final String TABLE_NAME_DAILY = "dailyToDoTBL";
     public static final String KEY_ID_DAILY = "id";
     public static final String KEY_NAME_DAILY = "eventName";
-    public static final String KEY_TYPE_DAILY = "type";
     public static final String KEY_TODOLIST_DAILY = "toDoList";
-    public static final String KEY_EVENTID_daily = "eventID";
+    public static final String KEY_TYPE_DAILY = "type";
     public static final String KEY_DATE_DAILY = "dateCreated";
+    public static final String KEY_EVENTID_DAILY = "eventID";
 
     //table name and rows for oneTimeTBL
     public static final String TABLE_NAME_ONETIME = "oneTimeTBL";
