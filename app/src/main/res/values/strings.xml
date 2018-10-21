@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProcrastinationX</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_event">Add First Event</string>
+    <string name="type_name">Name of the event...</string>
+    <string name="daily_todo">Daily to-do List</string>
+    <string name="one_time_event">One Time Event</string>
+    <string name="long_term_plan">Detailed Long-term Plan</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>
